@@ -1,0 +1,9 @@
+C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeBusiness\bin\Debug\netcoreapp3.1\SahhafiyeBusiness.deps.json
+C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeBusiness\bin\Debug\netcoreapp3.1\SahhafiyeBusiness.dll
+C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeBusiness\bin\Debug\netcoreapp3.1\SahhafiyeBusiness.pdb
+C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeBusiness\obj\Debug\netcoreapp3.1\SahhafiyeBusiness.csprojAssemblyReference.cache
+C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeBusiness\obj\Debug\netcoreapp3.1\SahhafiyeBusiness.AssemblyInfoInputs.cache
+C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeBusiness\obj\Debug\netcoreapp3.1\SahhafiyeBusiness.AssemblyInfo.cs
+C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeBusiness\obj\Debug\netcoreapp3.1\SahhafiyeBusiness.csproj.CoreCompileInputs.cache
+C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeBusiness\obj\Debug\netcoreapp3.1\SahhafiyeBusiness.dll
+C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeBusiness\obj\Debug\netcoreapp3.1\SahhafiyeBusiness.pdb

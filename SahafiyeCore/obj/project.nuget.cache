@@ -1,8 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "4hJUL1QukkdJ2VEazTQ01ew4XfAG8KWULEp4D57OOVpdc5gKqFTg9/RgN2zh4eApBrZkxULO9CWs37lDMe2P5Q==",
+  "dgSpecHash": "5/pIqh2R0cRTRJFXh1at7amDN1FSsqyuXU5vG9wl58Lg+5v2s/9pD2blXw+VJWfPgODid34xrxKizSDW6hGjbQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahafiyeCore\\SahafiyeCore.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\vedat\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\vedat\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
+    "C:\\Users\\vedat\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\vedat\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\vedat\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.8.0\\microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512",
+    "C:\\Users\\vedat\\.nuget\\packages\\microsoft.identitymodel.logging\\6.8.0\\microsoft.identitymodel.logging.6.8.0.nupkg.sha512",
+    "C:\\Users\\vedat\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
+    "C:\\Users\\vedat\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\vedat\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
+    "C:\\Users\\vedat\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }
