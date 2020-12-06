@@ -1,6 +1,5 @@
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeApi\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeApi\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeApi\bin\Debug\netcoreapp3.1\SahhafiyeApi.exe
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeApi\bin\Debug\netcoreapp3.1\SahhafiyeApi.deps.json
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeApi\bin\Debug\netcoreapp3.1\SahhafiyeApi.runtimeconfig.json
@@ -18,3 +17,4 @@ C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeApi\obj\Debug\netcoreapp3.
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeApi\obj\Debug\netcoreapp3.1\SahhafiyeApi.dll
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeApi\obj\Debug\netcoreapp3.1\SahhafiyeApi.pdb
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeApi\obj\Debug\netcoreapp3.1\SahhafiyeApi.genruntimeconfig.cache
+C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeApi\obj\Debug\netcoreapp3.1\scopedcss\bundle\SahhafiyeApi.styles.css

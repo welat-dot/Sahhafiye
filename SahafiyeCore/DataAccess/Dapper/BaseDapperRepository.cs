@@ -1,19 +1,17 @@
+using SahafiyeCore.Entities.Abstract;
 using System;
-using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SahafiyeCore.DataAccess.Dapper
 {
-    public class BaseDapperRepository<T> : IDapperRepository<T>
+    public class BaseDapperRepository<T> : IDapperRepository<T> where T : class, IEntity, new()
     {
         #region Sync Functions
         public T Add(T Data)
         {
             throw new NotImplementedException();
         }
-        public T Delete(T Data)
+        public T Delete(int Id)
         {
             throw new NotImplementedException();
         }
