@@ -1,5 +1,3 @@
-
-
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
@@ -21,8 +19,7 @@ namespace SahafiyeCore.Utilitis.Security.JWT
         public JwtHelper(IConfiguration configuration)
         {            
             this.configuration = configuration;
-            string strTokenOptions = configuration.GetSection(key: "TokenOptions").ToString();
-            _tokenOptions = JsonConvert.DeserializeObject<TokenOptions>(strTokenOptions);
+            _tokenOptions = configuration.GetSection(key: "TokenOptions").Get<TokenOptions>();           
         }
 
         public AccessToken CreateToken(UserInfo userInfo)

@@ -1,46 +1,56 @@
+using MySql.Data.MySqlClient;
 using SahafiyeCore.Entities.Abstract;
 using System;
+using System.Collections.Generic;
 using System.Linq.Expressions;
+using Microsoft.Extensions.Configuration;
+using System.Threading.Tasks;
+using System.Data;
+using Dapper;
+using System.Linq;
 
 namespace SahafiyeCore.DataAccess.Dapper
 {
+    
+
     public class BaseDapperRepository<T> : IDapperRepository<T> where T : class, IEntity, new()
     {
-        #region Sync Functions
-        public T Add(T Data)
+        private IConfiguration configuration { get; }
+        private MySqlConnection connection()
         {
-            throw new NotImplementedException();
+            return new MySqlConnection(configuration.GetSection("DefaultConn").Get<string>());
         }
-        public T Delete(int Id)
+       private IDbConnection CreateDbConn ()
         {
-            throw new NotImplementedException();
+            var conn = connection();
+            conn.Open();
+            return conn;
         }
-        public T Get(Expression<Func<T, bool>> filter)
+        public BaseDapperRepository(string _tableName)
         {
-            throw new NotImplementedException();
+
         }
-        public T Update(T Data)
+
+        public IQueryable<T> Syncfunctions(string sql, object parametre)
         {
-            throw new NotImplementedException();
+            using(var con =CreateDbConn())
+            {
+                return con.Query<T>(sql, parametre).AsQueryable<T>();
+            }
         }
-        #endregion
-        #region Async Functions
-        //public async Task<bool> AddRange(List<T> Data)
-        //{
-        //    throw new NotImplementedException();
-        //}
-        //public async Task<bool> DeleteRange(List<T> Data)
-        //{
-        //    throw new NotImplementedException();
-        //}
-        //public async Task<List<T>> GetAll(Expression<Func<T, bool>> filter = null)
-        //{
-        //    throw new NotImplementedException();
-        //}
-        //public async Task<bool> UpdateRange(List<T> Data)
-        //{
-        //    throw new NotImplementedException();
-        //}
-        #endregion
+
+        public async Task<IQueryable<T>> AsyncFunctions(string sql, object parametre)
+        {
+            using(var con =CreateDbConn())
+            {
+                IEnumerable< T> data =await  con.QueryAsync<T>(sql, parametre);
+               
+                return data.AsQueryable<T>();
+            }
+        }
+
+       
+      
+    
     }
 }
