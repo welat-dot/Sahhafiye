@@ -26,11 +26,6 @@ namespace SahafiyeCore.DataAccess.Dapper
             conn.Open();
             return conn;
         }
-        public BaseDapperRepository(string _tableName)
-        {
-
-        }
-
         public IQueryable<T> Syncfunctions(string sql, object parametre)
         {
             using(var con =CreateDbConn())
