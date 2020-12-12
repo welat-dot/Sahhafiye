@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SahhafiyeEntities.ProductEntity
 {
-    public class CurrencyEntity:IEntity
+    public class Currency:IEntity
     {
         public int Id { get; set; }
         public string Name  { get; set; }

@@ -18,7 +18,7 @@ namespace SahafiyeCore.DataAccess.Dapper
         private IConfiguration configuration { get; }
         private MySqlConnection connection()
         {
-            return new MySqlConnection(configuration.GetSection("DefaultConn").Get<string>());
+            return new MySqlConnection(@"server = localhost; user = root; password = welat.123; database = SahhafiyeDB;");
         }
        private IDbConnection CreateDbConn ()
         {
@@ -38,14 +38,21 @@ namespace SahafiyeCore.DataAccess.Dapper
         {
             using(var con =CreateDbConn())
             {
-                IEnumerable< T> data =await  con.QueryAsync<T>(sql, parametre);
+                IEnumerable<T> data =await  con.QueryAsync<T>(sql, parametre);
                
                 return data.AsQueryable<T>();
             }
         }
+        public async Task<IQueryable<T>> AsyncFunctions(string sql)
+        {
+            using (var con = CreateDbConn())
+            {
+                IEnumerable<T> data = await con.QueryAsync<T>(sql);
 
-       
+                return data.AsQueryable<T>();
+            }
+        }
+
       
-    
     }
 }

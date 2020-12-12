@@ -11,11 +11,14 @@ namespace SahafiyeCore.DataAccess.Dapper
     {
         #region Senkron Functions
         IQueryable<T> Syncfunctions(string sql, object parametre);
-        
+       
+
         #endregion
         #region Async Functions
         Task<IQueryable<T>> AsyncFunctions(string sql, object parametre);
-        
+        Task<IQueryable<T>> AsyncFunctions(string sql);
+
+
         #endregion
     }
 }

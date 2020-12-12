@@ -12,6 +12,7 @@ namespace SahhafiyeEntities.UsersEntity
         public string  TaxIdN { get; set; }
         public int UserId { get; set; }
         public int AddressId { get; set; }
+        public string  Adresss { get; set; }
         public DateTime? RecordTime { get; set; }
         public DateTime? UpdateTime { get; set; }
         

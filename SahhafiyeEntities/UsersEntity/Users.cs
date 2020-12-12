@@ -12,7 +12,7 @@ namespace SahhafiyeEntities.UsersEntity
         public int UserDetailId { get; set; }
         public DateTime? RecordTime { get; set; }
         public DateTime? UpdateTime { get; set; }
-        public int UserId { get; set; }
+       
 
     }
 }

@@ -13,9 +13,8 @@ namespace SahhafiyeEntities.ProductEntity
         public int Condition { get; set; }
         public int CategoryId { get; set; }
         public int CurencyId { get; set; }
-        public CurrencyEntity currencyEntity  { get; set; }
         public int StoreId { get; set; }
-        public StoreInfo storeInfo  { get; set; }
         public string PhotoPath { get; set; }
+        public string Description { get; set; }
     }
 }

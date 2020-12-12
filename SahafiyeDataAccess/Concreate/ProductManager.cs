@@ -9,6 +9,7 @@ namespace SahafiyeDataAccess.Concreate
 {
     public class ProductManager : BaseDapperRepository<Product>,IProductManager 
     {
+     
 
 
     }
