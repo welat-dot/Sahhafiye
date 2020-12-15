@@ -13,12 +13,15 @@ namespace SahafiyeDataAccess.Concreate
            this.productManager = productManager;
         }
 
-        public async Task<IQueryable<Product>> ProductGetir ()
+        public async Task<IQueryable<Product>> ProductGetAll()
         {
             string que = "SELECT *FROM product";
             return await  productManager.AsyncFunctions(que);
         }
+        //public IQueryable<Product> ProductAdd(Product product)
+        //{
 
+        //}
         
     }
 }

@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using SahhafiyeApi.Result;
 using SahhafiyeBusiness.Abstract;
 using SahhafiyeEntities.ProductEntity;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,7 +20,7 @@ namespace SahhafiyeApi.Controllers
         [Route("productGetAll"),HttpGet]
         public async Task<IActionResult> ProductGetAll()
         {
-            Results results = new Results();
+            Results<List<Product>> results = new Results<List<Product>>();
             IQueryable<Product> response =await productService.GetAll();
             results.data = response.ToList();
 

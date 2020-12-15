@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace SahhafiyeApi.Result
 {
-    public class Results
+    public class Results<T>
     {
-        public int Durum { get; set; } = 1;
+        public bool isSuccess { get; set; } = false;
+        public int kod { get; set; } = 1;
         public string mesaj { get; set; } = "heyyy";
-        public List<Product> data { get; set; }
+        public T data { get; set; }
+        
     }
 }
