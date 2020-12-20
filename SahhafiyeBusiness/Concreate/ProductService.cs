@@ -18,7 +18,7 @@ namespace SahhafiyeBusiness.Concreate
         }
         public async Task<IQueryable<Product>> GetAll()
         {
-            return await ProductRepo.ProductGetir();
+            return await ProductRepo.ProductGetAll();
         }
     }
 }

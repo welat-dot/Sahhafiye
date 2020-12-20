@@ -22,6 +22,7 @@ namespace SahhafiyeApi.Controllers
         {
             Results<List<Product>> results = new Results<List<Product>>();
             IQueryable<Product> response =await productService.GetAll();
+        //  var t=await productService.
             results.data = response.ToList();
 
             return Ok(results);

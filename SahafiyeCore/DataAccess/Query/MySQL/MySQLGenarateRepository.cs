@@ -4,61 +4,48 @@ using System.Text;
 
 namespace SahafiyeCore.DataAccess.Query.MySQL
 {
-    class MySQLGenarateRepository : IMySQLGenarateRepository
+    public class MySQLGenarateRepository : IMySQLGenarateRepository
     {
-        public string selectAll(string tableName)
+        public string BaseQuery(MysqlQueryLists mysqlQueryLists)
         {
-            return "SELECT *FROM " + tableName;
-        }
-
-        public string selectByFiltred(string tableName, string filtre)
-        {
-            return "SELECT *FROM " + tableName + " WHERE " + filtre;
-        }
-
-        public string selectByFiltred(string tableName, List<string> filtre)
-        {
-            string Que = "SELECT *FROM " + tableName + " WHERE ";
-            foreach (string filt in filtre)
+            string Que = "SELECT ";
+            for (int i = 0; i < mysqlQueryLists.SelectList.Count; i++)
+                Que += mysqlQueryLists.SelectList[i];
+            if(mysqlQueryLists.FromList.Count!=0)
             {
-                Que = Que + " " + filt;
+                Que += "FROM ";
+                for (int i = 0; i < mysqlQueryLists.FromList.Count; i++)
+                    Que += mysqlQueryLists.FromList[i];
             }
+
+
             return Que;
         }
-
-        public string selectByJoin(string tableNme, List<JoinParametre> joinList)
+        public string InnerQuery(string Que,List<string> InnerLİst)
         {
-            throw new NotImplementedException();
-        }
-
-        public string selectByJoinByLeftFiltred(string tableNme, List<JoinParametre> joinList, string filtre)
-        {
-            string Que = "SELECT *FROM " + tableNme;
-            for (int i=0;i<joinList.Count;i++)
-            {
-                Que = Que + " LEFT JOİN ON " +
-                joinList[i].tableName + "." + joinList[i].firstParametre + " = " +
-                tableNme + "." + joinList[i].secondParametre;
-            }
-            return Que + " WHERE " + filtre;
-        }
-
-        public string selectByJoinByLeftFiltred(string tableNme, List<JoinParametre> joinList, List<string> filtre)
-        {
-            string Que = "SELECT *FROM " + tableNme;
-            for (int i = 0; i < joinList.Count; i++)
-            {
-                Que = Que + " LEFT JOİN ON " +
-                joinList[i].tableName + "." + joinList[i].firstParametre + " = " +
-                tableNme + "." + joinList[i].secondParametre;
-            }
-            Que = Que + " WHERE";
-            for (int i=0;i<filtre.Count;i++)
-            {
-                Que = Que + " " + filtre[i];
-            }
+            for (int i = 0; i < InnerLİst.Count; i++)
+                Que += " INNER JOİN " + InnerLİst[i];
             return Que;
-
+        }      
+        public string LeftQuery(string Que, List<string> LeftList)
+        {
+            for (int i = 0; i < LeftList.Count; i++)
+                Que += " LEFT OUTER JOIN  " + LeftList[i];
+            return Que;
+        }        
+        public string RigtQuery(string Que, List<string> RightList)
+        {
+            for (int i = 0; i < RightList.Count; i++)
+                Que += " RIGHT OUTER JOIN  " + RightList[i];
+            return Que;
+        } 
+        public string WhereQuery(string Que,List<string> WhereList)
+        {
+            Que += " WHERE ";
+            for (int i = 0; i < WhereList.Count; i++)
+                Que += WhereList[i];
+            return Que;
         }
+        
     }
 }

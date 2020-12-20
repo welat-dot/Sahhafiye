@@ -19,9 +19,9 @@ namespace SahafiyeCore.Extension
         {
             claims.Add(new Claim(type: ClaimTypes.NameIdentifier, value: nameIdentityfier));
         }
-        public static void AddRoles(this ICollection<Claim> claims, string[] roles)
+        public static void AddRoles(this ICollection<Claim> claims, string roles)
         {
-            roles.ToList().ForEach(role => claims.Add(new Claim(type: ClaimTypes.Role, value: role)));
+            claims.Add(new Claim(type:ClaimTypes.Role, value: roles));
 
         }
         public static void AddAuthority(this ICollection<Claim> claims, string [] authoritys)

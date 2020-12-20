@@ -55,7 +55,7 @@ namespace SahafiyeCore.Utilitis.Security.JWT
             claims.AddNameIdentityfier(userInfo.Id.ToString());
             claims.AddEmail(userInfo.email);
             claims.AddName(userInfo.Name);
-            claims.AddRoles(userInfo.Role.ToArray());
+            claims.AddRoles(userInfo.Role);
             claims.AddAuthority(userInfo.Authority.ToArray());
             return claims;
         }

@@ -10,7 +10,7 @@ namespace SahafiyeCore.Entities.Concreate
         public int Id { get; set; } = 0;
         public string email { get; set; } = "Unknown";
         public string Name { get; set; } = "Unknown";
-        public List<string> Role { get; set; }      
+        public string Role { get; set; }      
         public List<string> Authority{ get; set; }
     }
 }
