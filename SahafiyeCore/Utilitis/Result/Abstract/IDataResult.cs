@@ -6,6 +6,7 @@ namespace SahafiyeCore.Utilitis.Result.Abstract
 {
     public interface IDataResult<T>:IResult
     {
-        string kod { get; }
+        public string kod { get; }
+        public T Data { get;}
     }
 }

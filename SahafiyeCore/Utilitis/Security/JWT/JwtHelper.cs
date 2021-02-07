@@ -53,9 +53,10 @@ namespace SahafiyeCore.Utilitis.Security.JWT
         {
             var claims = new List<Claim>();
             claims.AddNameIdentityfier(userInfo.Id.ToString());
+            claims.AddStoreIdentityfier(userInfo.StoreId.ToString());
             claims.AddEmail(userInfo.email);
             claims.AddName(userInfo.Name);
-            claims.AddRoles(userInfo.Role);
+            //claims.AddRoles(userInfo.Role);
             claims.AddAuthority(userInfo.Authority.ToArray());
             return claims;
         }

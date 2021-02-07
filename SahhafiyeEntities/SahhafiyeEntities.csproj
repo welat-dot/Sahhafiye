@@ -8,8 +8,4 @@
     <ProjectReference Include="..\SahafiyeCore\SahafiyeCore.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Dto\" />
-  </ItemGroup>
-
 </Project>

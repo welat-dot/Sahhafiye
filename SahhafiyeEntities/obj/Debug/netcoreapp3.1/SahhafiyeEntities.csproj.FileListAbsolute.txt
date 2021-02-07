@@ -1,12 +1,12 @@
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeEntities\bin\Debug\netcoreapp3.1\SahhafiyeEntities.deps.json
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeEntities\bin\Debug\netcoreapp3.1\SahhafiyeEntities.dll
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeEntities\bin\Debug\netcoreapp3.1\SahhafiyeEntities.pdb
+C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeEntities\bin\Debug\netcoreapp3.1\SahafiyeCore.dll
+C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeEntities\bin\Debug\netcoreapp3.1\SahafiyeCore.pdb
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeEntities\obj\Debug\netcoreapp3.1\SahhafiyeEntities.csprojAssemblyReference.cache
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeEntities\obj\Debug\netcoreapp3.1\SahhafiyeEntities.AssemblyInfoInputs.cache
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeEntities\obj\Debug\netcoreapp3.1\SahhafiyeEntities.AssemblyInfo.cs
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeEntities\obj\Debug\netcoreapp3.1\SahhafiyeEntities.csproj.CoreCompileInputs.cache
+C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeEntities\obj\Debug\netcoreapp3.1\SahhafiyeEntities.csproj.CopyComplete
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeEntities\obj\Debug\netcoreapp3.1\SahhafiyeEntities.dll
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeEntities\obj\Debug\netcoreapp3.1\SahhafiyeEntities.pdb
-C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeEntities\bin\Debug\netcoreapp3.1\SahafiyeCore.dll
-C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeEntities\bin\Debug\netcoreapp3.1\SahafiyeCore.pdb
-C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahhafiyeEntities\obj\Debug\netcoreapp3.1\SahhafiyeEntities.csproj.CopyComplete

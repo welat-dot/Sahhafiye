@@ -7,9 +7,10 @@ namespace SahhafiyeEntities.UsersEntity
 	{
         public int Id { get; set; }
         public string EmailAdress { get; set; }
+        public string TelNumber { get; set; }
         public byte[] PasswordHash { get; set; }
-        public byte[] PaswordSalt { get; set; }
-        public int UserDetailId { get; set; }
+        public byte[] PasswordSalt { get; set; }
+        public int  UserDetailId { get; set; }
         public DateTime? RecordTime { get; set; }
         public DateTime? UpdateTime { get; set; }
        

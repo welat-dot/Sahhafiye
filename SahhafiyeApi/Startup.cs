@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using Abp.Application.Services;
+using FluentMigrator.Runner;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,6 +13,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using SahafiyeDataAccess.Migrationsss;
+//using SahhafiyeApi.socketDeneme;
 
 namespace SahhafiyeApi
 {
@@ -26,6 +31,8 @@ namespace SahhafiyeApi
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddControllers();
+           
+           
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +53,8 @@ namespace SahhafiyeApi
 			{
 				endpoints.MapControllers();
 			});
+            //Database.Migrate("server = localhost; user = root; password = welat.123; database = SahhafiyeDB;","Sahhafiye_DB");
+            //Database.RunMigrations();
 		}
 	}
 }

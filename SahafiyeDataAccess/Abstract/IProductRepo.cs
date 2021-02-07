@@ -7,6 +7,6 @@ namespace SahafiyeDataAccess.Abstract
     public interface IProductRepo
     {
         Task<IQueryable<Product>> ProductGetAll();
-        //Task<IQueryable<Product>> ProductAdd();
+      
     }
 }

@@ -18,8 +18,8 @@ namespace SahafiyeCore.Utilitis.Result.Concreate
             this.success = success;
         }
         public bool success { get; }
-        public string message { get; }
+        public string message { get; set; }
 
-        public string kod { get;}
+        public string kod { get; set; }
     }
 }
