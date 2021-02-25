@@ -58,6 +58,14 @@ namespace SahafiyeCore.DataAccess.Dapper
                 return item;                
             }
         }
+        public bool Insert(string sql)
+        {
+            using (var con = CreateDbConn())
+            {             
+
+                return con.ExecuteScalar<bool>(sql);
+            }
+        }
         #endregion
 
         #region asyncron
@@ -78,9 +86,7 @@ namespace SahafiyeCore.DataAccess.Dapper
 
                 return data.AsQueryable<T>();
             }
-        }
+        }      
         #endregion
-
-
     }
 }

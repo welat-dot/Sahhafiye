@@ -6,4 +6,3 @@ C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahafiyeCore\obj\Debug\netcoreapp3.
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahafiyeCore\obj\Debug\netcoreapp3.1\SahafiyeCore.csproj.CoreCompileInputs.cache
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahafiyeCore\obj\Debug\netcoreapp3.1\SahafiyeCore.dll
 C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahafiyeCore\obj\Debug\netcoreapp3.1\SahafiyeCore.pdb
-C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahafiyeCore\obj\Debug\netcoreapp3.1\SahafiyeCore.csprojAssemblyReference.cache

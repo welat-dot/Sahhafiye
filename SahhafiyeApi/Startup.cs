@@ -53,8 +53,8 @@ namespace SahhafiyeApi
 			{
 				endpoints.MapControllers();
 			});
-            //Database.Migrate("server = localhost; user = root; password = welat.123; database = SahhafiyeDB;","Sahhafiye_DB");
-            //Database.RunMigrations();
-		}
+            Database.Migrate("server = localhost; user = root; password = welat.123; database = SahhafiyeDB;", "Sahhafiye_DB");
+            Database.RunMigrations();
+        }
 	}
 }

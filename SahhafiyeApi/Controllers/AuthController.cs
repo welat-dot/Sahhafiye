@@ -26,8 +26,7 @@ namespace SahhafiyeApi.Controllers
         }
         [Route("login"), HttpPost]
         public IActionResult UserLogin(ForLoginDto loginDto)
-        {
-            
+        {            
             return Ok(authService.UserLogin(loginDto));
         }
     }
