@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahhafiyeBusiness\\SahhafiyeBusiness.csproj": {}
+    "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahhafiyeBusiness\\SahhafiyeBusiness.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahafiyeCore\\SahafiyeCore.csproj": {
+    "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahafiyeCore\\SahafiyeCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahafiyeCore\\SahafiyeCore.csproj",
+        "projectUniqueName": "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahafiyeCore\\SahafiyeCore.csproj",
         "projectName": "SahafiyeCore",
-        "projectPath": "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahafiyeCore\\SahafiyeCore.csproj",
-        "packagesPath": "C:\\Users\\vedat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahafiyeCore\\obj\\",
+        "projectPath": "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahafiyeCore\\SahafiyeCore.csproj",
+        "packagesPath": "C:\\Users\\welat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahafiyeCore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vedat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\welat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -76,21 +80,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahafiyeDataAccess\\SahafiyeDataAccess.csproj": {
+    "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahafiyeDataAccess\\SahafiyeDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahafiyeDataAccess\\SahafiyeDataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahafiyeDataAccess\\SahafiyeDataAccess.csproj",
         "projectName": "SahafiyeDataAccess",
-        "projectPath": "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahafiyeDataAccess\\SahafiyeDataAccess.csproj",
-        "packagesPath": "C:\\Users\\vedat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahafiyeDataAccess\\obj\\",
+        "projectPath": "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahafiyeDataAccess\\SahafiyeDataAccess.csproj",
+        "packagesPath": "C:\\Users\\welat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahafiyeDataAccess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vedat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\welat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,8 +112,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahhafiyeEntities\\SahhafiyeEntities.csproj": {
-                "projectPath": "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahhafiyeEntities\\SahhafiyeEntities.csproj"
+              "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahhafiyeEntities\\SahhafiyeEntities.csproj": {
+                "projectPath": "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahhafiyeEntities\\SahhafiyeEntities.csproj"
               }
             }
           }
@@ -144,21 +152,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahhafiyeBusiness\\SahhafiyeBusiness.csproj": {
+    "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahhafiyeBusiness\\SahhafiyeBusiness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahhafiyeBusiness\\SahhafiyeBusiness.csproj",
+        "projectUniqueName": "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahhafiyeBusiness\\SahhafiyeBusiness.csproj",
         "projectName": "SahhafiyeBusiness",
-        "projectPath": "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahhafiyeBusiness\\SahhafiyeBusiness.csproj",
-        "packagesPath": "C:\\Users\\vedat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahhafiyeBusiness\\obj\\",
+        "projectPath": "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahhafiyeBusiness\\SahhafiyeBusiness.csproj",
+        "packagesPath": "C:\\Users\\welat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahhafiyeBusiness\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vedat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\welat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -172,8 +184,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahafiyeDataAccess\\SahafiyeDataAccess.csproj": {
-                "projectPath": "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahafiyeDataAccess\\SahafiyeDataAccess.csproj"
+              "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahafiyeDataAccess\\SahafiyeDataAccess.csproj": {
+                "projectPath": "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahafiyeDataAccess\\SahafiyeDataAccess.csproj"
               }
             }
           }
@@ -208,21 +220,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahhafiyeEntities\\SahhafiyeEntities.csproj": {
+    "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahhafiyeEntities\\SahhafiyeEntities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahhafiyeEntities\\SahhafiyeEntities.csproj",
+        "projectUniqueName": "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahhafiyeEntities\\SahhafiyeEntities.csproj",
         "projectName": "SahhafiyeEntities",
-        "projectPath": "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahhafiyeEntities\\SahhafiyeEntities.csproj",
-        "packagesPath": "C:\\Users\\vedat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahhafiyeEntities\\obj\\",
+        "projectPath": "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahhafiyeEntities\\SahhafiyeEntities.csproj",
+        "packagesPath": "C:\\Users\\welat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahhafiyeEntities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vedat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\welat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -236,8 +252,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahafiyeCore\\SahafiyeCore.csproj": {
-                "projectPath": "C:\\Users\\vedat\\Desktop\\Sahafiye\\SahafiyeCore\\SahafiyeCore\\SahafiyeCore.csproj"
+              "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahafiyeCore\\SahafiyeCore.csproj": {
+                "projectPath": "C:\\Users\\welat\\Documents\\GitHub\\Sahhafiye\\SahafiyeCore\\SahafiyeCore.csproj"
               }
             }
           }
@@ -266,7 +282,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
