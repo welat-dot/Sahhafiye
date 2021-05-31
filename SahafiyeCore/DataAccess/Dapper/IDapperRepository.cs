@@ -10,7 +10,7 @@ namespace SahafiyeCore.DataAccess.Dapper
     public interface IDapperRepository<T> where T : class, IEntity
     {
         #region Senkron Functions
-        IQueryable<T> Syncfunctions(string sql, object parametre);
+        IQueryable<T> Syncfunctions(string sql, object parametre, T entity);
         IQueryable<T> Syncfunctions(string sql);
         T Get(string sql);
         bool Insert(string sql);

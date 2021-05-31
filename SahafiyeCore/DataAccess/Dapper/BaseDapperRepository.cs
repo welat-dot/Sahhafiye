@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Data;
 using Dapper;
 using System.Linq;
+using SahafiyeCore.DataAccess.Query.MySQL.MySQLQuery;
 
 namespace SahafiyeCore.DataAccess.Dapper
 {
@@ -16,7 +17,7 @@ namespace SahafiyeCore.DataAccess.Dapper
     public class BaseDapperRepository<T> : IDapperRepository<T> where T : class, IEntity, new()
     {
         private IConfiguration configuration { get; }
-
+       
         #region connection
         private MySqlConnection connection()
         {
@@ -31,16 +32,20 @@ namespace SahafiyeCore.DataAccess.Dapper
         #endregion 
 
         #region syncron
-        public IQueryable<T> Syncfunctions(string sql, object parametre)
+        public IQueryable<T> Syncfunctions(string sql, object parametre, T entity)
         {
-            using(var con =CreateDbConn())
+            QueryWrite<T> queryWrite = new QueryWrite<T>();
+            string  ad = queryWrite.insertQuery(entity,"user");
+
+            using (var con =CreateDbConn())
             {
-                var a = con.Execute(sql, parametre);
+                var a = con.Execute(ad);
                 return con.Query<T>(sql, parametre).AsQueryable<T>();
             }
         }
         public IQueryable<T> Syncfunctions(string sql)
         {
+            
             using (var con = CreateDbConn())
             {
                 IEnumerable<T> data = con.Query<T>(sql);

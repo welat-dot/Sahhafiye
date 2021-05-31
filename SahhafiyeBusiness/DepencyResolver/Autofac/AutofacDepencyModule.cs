@@ -4,6 +4,7 @@ using SahafiyeDataAccess.Concreate;
 using SahhafiyeBusiness.Abstract;
 using SahhafiyeBusiness.Concreate;
 using SahafiyeCore.DataAccess.Query.MySQL;
+using SahafiyeCore.DataAccess.Query.MySQL.MySQLQuery;
 using SahafiyeCore.Utilitis.Security.JWT;
 using SahafiyeCore.Utilitis.Result.Abstract;
 
@@ -20,8 +21,8 @@ namespace SahhafiyeBusiness.DepencyResolver.Autofac
             builder.RegisterType<UserRepo>().As<IUserRepo>();
             builder.RegisterType<UserManager>().As<IUserManager>();
             builder.RegisterType<AuthService>().As<IAuthService>();
-
-            builder.RegisterType<MySQLGenarateRepository >().As<IMySQLGenarateRepository>();
+            //builder.RegisterGeneric(typeof(IQueryWrite<>)).As(typeof(QueryWrite<>)).InstancePerDependency();
+            builder.RegisterType<MySQLGenarateRepository>().As<IMySQLGenarateRepository>();
             builder.RegisterType<JwtHelper>().As<ITokenHelper>();
         }
 

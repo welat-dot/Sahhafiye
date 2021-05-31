@@ -32,7 +32,7 @@ namespace SahafiyeDataAccess.Concreate
                               UpdateTime   = users.UpdateTime };
             string que = "INSERT INTO Users(EmailAdress,TelNumber,PasswordHash,PasswordSalt,UserDetailId,RecordTime,UpdateTime) OUTPUT INSTERTED.Id";
                    que += "  VALUES(@EmailAdress,@TelNumber,@PasswordHash,@PasswordSalt,@UserDetailId,@RecordTime,@UpdateTime)";
-            var a = userManager.Syncfunctions(que,parametrs);
+            var a = userManager.Syncfunctions(que,parametrs,users);
             return true;
         }
 
@@ -58,7 +58,7 @@ namespace SahafiyeDataAccess.Concreate
             MysqlQueryLists queryLists = new MysqlQueryLists();
             queryLists.SelectList.Add("*");
             queryLists.WhereList = filter;
-            queryLists.FromList.Add(" Users as Users");
+            queryLists.FromList.Add(" user as Users");
             string que = mySQLGenarate.BaseQuery(queryLists);
             que = mySQLGenarate.WhereQuery(que, queryLists.WhereList);
 

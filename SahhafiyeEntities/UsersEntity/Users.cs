@@ -11,8 +11,8 @@ namespace SahhafiyeEntities.UsersEntity
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
         public int  UserDetailId { get; set; }
-        public DateTime? RecordTime { get; set; }
-        public DateTime? UpdateTime { get; set; }
+        public DateTime RecordTime { get; set; }
+        public DateTime UpdateTime { get; set; }
        
 
     }
