@@ -10,12 +10,52 @@ namespace SahafiyeCore.DataAccess.Query.MySQL.MySQLQuery
     public class QueryWrite<T> : IQueryWrite<T> where T : class, IEntity, new()
     {
         public string insertQuery(T entity,string tableName)
+        {           
+          
+            return insertWrite(modelMake(entity), tableName);
+        }
+        public string updatQuery(T entity, string tableName,int id)
         {
-            
-            ClassVariableModel variableModels = new  ClassVariableModel();
+            return updateWrite(modelMake(entity), tableName,id);
+        }
+        private string  insertWrite(ClassVariableModel models ,string tableNme)
+        {
+            VariableHelper helper = new VariableHelper();
+            string insertQue = "INSERT INTO " + tableNme + "  (";
+            insertQue += string.Join(",", models.VariableName) + " )";
+            insertQue += " VALUES( ";
+            for (int i = 0; i<models.Variable.Count;i++)
+            {
+                insertQue += helper.getSqlQue(
+                    VariableHelper.variableDictionary[models.VariableType[i]],
+                    models.Variable[i]
+                    );
+            }
+            insertQue = insertQue.Substring(0, insertQue.Length - 1) + " );";
+            insertQue += " SELECT last_insert_id(), max(Id) from "+tableNme+";";
+            return insertQue;
+        }
+        private string updateWrite(ClassVariableModel models, string tableNme,int id)
+        {
+            VariableHelper helper = new VariableHelper();
+            string updateQue = "UPDATE " + tableNme + " set ";
+            for(int i = 0;i<models.Variable.Count;i++)
+            {
+                updateQue += models.VariableName + " =  ";
+                updateQue += helper.getSqlQue(
+                    VariableHelper.variableDictionary[models.VariableType[i]],
+                    models.Variable[i]
+                    ); 
+            }
+            updateQue = updateQue.Substring(0, updateQue.Length - 1);
+            updateQue += " WHERE Id = " + id.ToString();
+            return updateQue;
+        }
+        private ClassVariableModel modelMake(T entity)
+        {
+            ClassVariableModel variableModels = new ClassVariableModel();
             foreach (PropertyInfo info in entity.GetType().GetProperties())
             {
-                //ClassVariableModel classVariable = new ClassVariableModel();
                 variableModels.VariableName.Add(info.Name);
                 variableModels.VariableType.Add(info.PropertyType.FullName.Split(".")[1]);
                 if (info.PropertyType.FullName.Split(".")[1] == "Byte[]")
@@ -24,40 +64,8 @@ namespace SahafiyeCore.DataAccess.Query.MySQL.MySQLQuery
                     variableModels.Variable.Add(info.GetValue(entity).ToString());
 
             }
-            return insertWrite(variableModels, tableName);
+            return variableModels;
         }
-        private string  insertWrite(ClassVariableModel models ,string tableNme)
-        {
-            List<string> strType = new List<string>();
-            strType.Add("String");
-            strType.Add("DateTime");
-            strType.Add("Char");
-            strType.Add("Byte[]");
-            string insertQue = "INSERT INTO " + tableNme + "  (";
-            insertQue += string.Join(",", models.VariableName) + " )";
-            insertQue += " VALUES( ";
-            for (int i = 0; i<models.Variable.Count;i++)
-            {
-                if (strType.Contains(models.VariableType[i]))
-                {
-                    if(models.VariableType[i] =="Byte[]")
-                        insertQue += "'" + Encoding.UTF8.GetBytes(models.Variable[i]) + "',";
-                    else
-                    {
-                        if (models.VariableType[i] == "DateTime")
-                            insertQue += "str_to_date('" + models.Variable[i] + "','%d.%m.%Y %H:%i:%s'),";
-                        else
-                            insertQue += "'" + models.Variable[i] + "',";
-                    }
-                        
-                        
-                }
-                else
-                    insertQue += models.Variable[i] + ",";
-            }
-            insertQue = insertQue.Substring(0, insertQue.Length - 1) + " );";
-            insertQue += " SELECT last_insert_id(), max(Id) from "+tableNme+";";
-            return insertQue;
-        }
+
     }
 }
