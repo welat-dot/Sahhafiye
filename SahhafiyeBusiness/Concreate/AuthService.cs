@@ -14,23 +14,22 @@ namespace SahhafiyeBusiness.Concreate
 {
     public class AuthService : IAuthService
     {
-        private IUserRepo userRepo;
+       
+        private IUserBusiness userBusiness;
         private ITokenHelper tokenHelper;
-        public AuthService (IUserRepo userRepo, ITokenHelper tokenHelper)
+        public AuthService (ITokenHelper tokenHelper, IUserBusiness userBusiness)
         {
             this.tokenHelper = tokenHelper;
-            this.userRepo    = userRepo;
+            this.userBusiness = userBusiness;
         }
 
         public IDataResult<AccessToken> UserLogin(ForLoginDto loginDto)
         {
-            IDataResult<Users> result;
-            result = UserExists(loginDto.EmailAdress);
-            if(result.success&&result.Data !=null)
-            {
-                Users user = result.Data;
-                bool a = HashingHelper.VerifityPasswordHash(loginDto.Password, user.PasswordHash, user.PasswordSalt);
-                if (a)
+            IDataResult<users> result;
+            result = userBusiness.userExistsForLogin(loginDto.EmailAdress);
+            if (result.success)            {
+                users user = result.Data;
+                if (HashingHelper.VerifityPasswordHash(loginDto.Password, user.PasswordHash, user.PasswordSalt))
                 {
                     UserInfo user1 = new UserInfo();
                     user1.Authority.Add("yetki");
@@ -42,78 +41,42 @@ namespace SahhafiyeBusiness.Concreate
                 }
                 else
                     return new ErrorDataResult<AccessToken>(null, ResultMessage.ErrorPassword);
-            }
-            if (result.Data == null && result.success)
-                return new ErrorDataResult<AccessToken>(null, ResultMessage.ErrorUser);
+            }            
             return new ErrorDataResult<AccessToken>(null, ResultMessage.ErrorSystem);
         }
         public IResult  UserRegister(ForRegisterDto registerDto)
         {
-
-            IDataResult<Users> result;
+            if (userBusiness.userExistsForRegister(registerDto.EmailAdress).success)
+                return new ErrorResult();
             byte[] passwordHash, passwordSalt;
             HashingHelper.CreateHash(registerDto.Password, out passwordHash, out passwordSalt);
-            Users users = new Users();
-            if(registerDto.EmailAdress==null&&registerDto.TelNumber==null)
-                return new ErrorResult(ResultMessage.ErrorUserMail);
-            //check mail
-            if (registerDto.EmailAdress != null)
-            {
-                result = UserExists(registerDto.EmailAdress);
-                if (result.success && result.Data != null)
-                    return new ErrorResult(ResultMessage.ErrorUserMail);
-                if (!result.success)
-                    return new ErrorResult(ResultMessage.ErrorSystem);
-            }
-            //check tel 
-            if (registerDto.TelNumber != null)
-            {
-                result = UserExists(registerDto.TelNumber);
-              
-                if (result.success && result.Data != null)
-                    return new ErrorResult(ResultMessage.ErrorUserTel);
-                if (!result.success)
-                    return new ErrorResult(ResultMessage.ErrorSystem);
-                
-            }
-            try
-            {
-                if(registerDto.EmailAdress != null)
-                    users.EmailAdress = registerDto.EmailAdress;
-                if (registerDto.TelNumber != null)
-                    users.TelNumber = registerDto.TelNumber;
-                users.PasswordHash = passwordHash;
-                users.PasswordSalt = passwordSalt;
-                users.RecordTime   = DateTime.Now;
-                users.TelNumber    = registerDto.TelNumber;
-                users.UpdateTime   = DateTime.Now;
-                userRepo.AddUser(users);
-                return new SuccessResult(ResultMessage.RecordSuccess);
-            }
-            catch (Exception e)
-            {
-
-                return new ErrorResult(ResultMessage.ErrorSystem);
-            }            
-            
+            users users = new users();
+            users.EmailAdress = registerDto.EmailAdress;
+            users.TelNumber = "";
+            users.PasswordHash = passwordHash;
+            users.PasswordSalt = passwordSalt;
+            users.RecordDate = DateTime.Now;
+            users.UserName = "";
+            users.UpdateDate = DateTime.Now;
+            return userBusiness.Add(users);
         }
-        public IDataResult<Users> UserExists(string userMail)
+        public IDataResult<users> UserExists(string userMail)
         {
             try
             {
-                Users user = new Users();
-                user = userRepo.GetUsers(new List<string>() { " Users.EmailAdress = '" + userMail + "' OR " +
-                                                              " Users.TelNumber   = '" + userMail + "'" });
-                if(user == null)
-                {
-                    return new SuccessDataResult<Users>(null);
-                }
-                return new SuccessDataResult<Users>(user);
+                users user = new users();
+                //user = userRepo.GetUsers(new List<string>() { " Users.EmailAdress = '" + userMail + "' OR " +
+                //                                              " Users.TelNumber   = '" + userMail + "'" });
+                //if(user == null)
+                //{
+                //    return new SuccessDataResult<user>(null);
+                //}
+                return new SuccessDataResult<users>(user);
             }
             catch (Exception e)
             {
 
-                return new ErrorDataResult<Users>(null);
+                return new ErrorDataResult<users>(null);
             }
         }
 

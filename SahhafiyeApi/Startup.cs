@@ -1,24 +1,17 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
-using Abp.Application.Services;
-using FluentMigrator.Runner;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using SahafiyeDataAccess.Migrationsss;
+using SahafiyeCore.DataAccess.Query.MySQL.MySQLQuery;
+using SahafiyeDataAccess.Migrations;
+using System.Collections.Generic;
+using System.Globalization;
 //using SahhafiyeApi.socketDeneme;
 
 namespace SahhafiyeApi
 {
-	public class Startup
+    public class Startup
 	{
 		public Startup(IConfiguration configuration)
 		{
@@ -30,7 +23,9 @@ namespace SahhafiyeApi
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
+			
 			services.AddControllers();
+			services.AddSwaggerDocument();
            
            
 		}
@@ -38,13 +33,24 @@ namespace SahhafiyeApi
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 		{
+            //var supportedCultures = new List<CultureInfo> { };
+            var gb = new CultureInfo(CultureInfo.CurrentCulture.Name);
+            gb = CultureInfo.CurrentCulture;
+			//gb.DateTimeFormat.LongDatePattern = "yyyy-MM-dd HH:mm:ss tt";
+			//gb.DateTimeFormat.ShortDatePattern = "yyyy-MM-dd";
+			//supportedCultures.Add(gb);
+			var culture = CultureInfo.CreateSpecificCulture("tr-TR");
+			culture.DateTimeFormat.LongDatePattern = "yyyy-MM-dd HH:mm:ss tt";
+			culture.DateTimeFormat.ShortDatePattern = "yyyy-MM-dd";
+            CultureInfo.DefaultThreadCurrentCulture = culture;
 			if (env.IsDevelopment())
 			{
 				app.UseDeveloperExceptionPage();
 			}
-
+			app.UseOpenApi();
+			app.UseSwaggerUi3();
 			app.UseHttpsRedirection();
-
+			
 			app.UseRouting();
 
 			app.UseAuthorization();
@@ -53,7 +59,10 @@ namespace SahhafiyeApi
 			{
 				endpoints.MapControllers();
 			});
-            Database.Migrate("server = localhost; user = root; password = welat.123; database = SahhafiyeDB;", "Sahhafiye_DB");
+			VariableHelper variableHelper = new VariableHelper();
+			variableHelper.dictFill();
+
+			Database.Migrate("server = localhost; user = root; password = welat.123; database = sys;", "sahhafiye_db");
             Database.RunMigrations();
         }
 	}

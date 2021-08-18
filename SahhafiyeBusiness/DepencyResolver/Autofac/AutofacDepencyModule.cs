@@ -17,8 +17,7 @@ namespace SahhafiyeBusiness.DepencyResolver.Autofac
             builder.RegisterType<ProductRepo>().As<IProductRepo>();
             builder.RegisterType<ProductManager>().As<IProductManager>();
             builder.RegisterType<ProductService>().As<IProductService>();
-
-            builder.RegisterType<UserRepo>().As<IUserRepo>();
+            builder.RegisterType<UserBusiness>().As<IUserBusiness>();
             builder.RegisterType<UserManager>().As<IUserManager>();
             builder.RegisterType<AuthService>().As<IAuthService>();
             //builder.RegisterGeneric(typeof(IQueryWrite<>)).As(typeof(QueryWrite<>)).InstancePerDependency();

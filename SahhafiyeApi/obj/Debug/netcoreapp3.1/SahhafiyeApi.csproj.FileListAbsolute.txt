@@ -134,6 +134,7 @@ C:\Users\welat\Documents\GitHub\Sahhafiye\SahhafiyeApi\bin\Debug\netcoreapp3.1\C
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahhafiyeApi\bin\Debug\netcoreapp3.1\Castle.Windsor.dll
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahhafiyeApi\bin\Debug\netcoreapp3.1\ConfigureAwait.dll
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahhafiyeApi\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahhafiyeApi\bin\Debug\netcoreapp3.1\Dapper.Contrib.dll
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahhafiyeApi\bin\Debug\netcoreapp3.1\FluentMigrator.dll
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahhafiyeApi\bin\Debug\netcoreapp3.1\FluentMigrator.Abstractions.dll
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahhafiyeApi\bin\Debug\netcoreapp3.1\FluentMigrator.Extensions.Oracle.dll
@@ -236,3 +237,4 @@ C:\Users\welat\Documents\GitHub\Sahhafiye\SahhafiyeApi\obj\Debug\netcoreapp3.1\S
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahhafiyeApi\obj\Debug\netcoreapp3.1\SahhafiyeApi.dll
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahhafiyeApi\obj\Debug\netcoreapp3.1\SahhafiyeApi.pdb
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahhafiyeApi\obj\Debug\netcoreapp3.1\SahhafiyeApi.genruntimeconfig.cache
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahhafiyeApi\bin\Debug\netcoreapp3.1\Z.Dapper.Plus.dll

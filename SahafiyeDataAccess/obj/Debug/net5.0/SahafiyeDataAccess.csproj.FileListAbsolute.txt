@@ -1,0 +1,17 @@
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\bin\Debug\net5.0\SahafiyeDataAccess.deps.json
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\bin\Debug\net5.0\SahafiyeDataAccess.dll
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\bin\Debug\net5.0\ref\SahafiyeDataAccess.dll
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\bin\Debug\net5.0\SahafiyeDataAccess.pdb
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\bin\Debug\net5.0\SahafiyeCore.dll
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\bin\Debug\net5.0\SahhafiyeEntities.dll
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\bin\Debug\net5.0\SahhafiyeEntities.pdb
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\bin\Debug\net5.0\SahafiyeCore.pdb
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\obj\Debug\net5.0\SahafiyeDataAccess.csprojAssemblyReference.cache
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\obj\Debug\net5.0\SahafiyeDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\obj\Debug\net5.0\SahafiyeDataAccess.AssemblyInfoInputs.cache
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\obj\Debug\net5.0\SahafiyeDataAccess.AssemblyInfo.cs
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\obj\Debug\net5.0\SahafiyeDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\obj\Debug\net5.0\SahafiyeDataAccess.csproj.CopyComplete
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\obj\Debug\net5.0\SahafiyeDataAccess.dll
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\obj\Debug\net5.0\ref\SahafiyeDataAccess.dll
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeDataAccess\obj\Debug\net5.0\SahafiyeDataAccess.pdb

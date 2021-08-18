@@ -1,0 +1,12 @@
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\bin\Debug\net5.0\SahafiyeCore.deps.json
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\bin\Debug\net5.0\SahafiyeCore.dll
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\bin\Debug\net5.0\ref\SahafiyeCore.dll
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\bin\Debug\net5.0\SahafiyeCore.pdb
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\obj\Debug\net5.0\SahafiyeCore.csprojAssemblyReference.cache
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\obj\Debug\net5.0\SahafiyeCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\obj\Debug\net5.0\SahafiyeCore.AssemblyInfoInputs.cache
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\obj\Debug\net5.0\SahafiyeCore.AssemblyInfo.cs
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\obj\Debug\net5.0\SahafiyeCore.csproj.CoreCompileInputs.cache
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\obj\Debug\net5.0\SahafiyeCore.dll
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\obj\Debug\net5.0\ref\SahafiyeCore.dll
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\obj\Debug\net5.0\SahafiyeCore.pdb

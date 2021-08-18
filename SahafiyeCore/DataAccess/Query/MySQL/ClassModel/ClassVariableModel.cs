@@ -8,7 +8,7 @@ namespace SahafiyeCore.DataAccess.Query.MySQL.ClassModel
     {
         public List<string> VariableName { get; set; } = new List<string>();
         public List<string> VariableType { get; set; } = new List<string>();
-        public List<string> Variable { get; set; } = new List<string>();
+        public List<dynamic> Variable { get; set; } = new List<dynamic>();     
     }
 }
  

@@ -17,5 +17,6 @@ namespace SahhafiyeBusiness.Concreate
         public static string DeleteSuccess      =   "Delete is Success";
         public static string UpdateSuccess      =   "Update is Success";
         public static string ErrorUser          =   "Error!! User not be found";
+        public static string ExsistrUser        =   "Error!! User is  already exsists";
     }
 }

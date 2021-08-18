@@ -9,9 +9,9 @@ C:\Users\vedat\Desktop\Sahafiye\SahafiyeCore\SahafiyeCore\obj\Debug\netcoreapp3.
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\bin\Debug\netcoreapp3.1\SahafiyeCore.deps.json
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\bin\Debug\netcoreapp3.1\SahafiyeCore.dll
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\bin\Debug\netcoreapp3.1\SahafiyeCore.pdb
-C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\obj\Debug\netcoreapp3.1\SahafiyeCore.csprojAssemblyReference.cache
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\obj\Debug\netcoreapp3.1\SahafiyeCore.AssemblyInfoInputs.cache
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\obj\Debug\netcoreapp3.1\SahafiyeCore.AssemblyInfo.cs
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\obj\Debug\netcoreapp3.1\SahafiyeCore.csproj.CoreCompileInputs.cache
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\obj\Debug\netcoreapp3.1\SahafiyeCore.dll
 C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\obj\Debug\netcoreapp3.1\SahafiyeCore.pdb
+C:\Users\welat\Documents\GitHub\Sahhafiye\SahafiyeCore\obj\Debug\netcoreapp3.1\SahafiyeCore.csprojAssemblyReference.cache

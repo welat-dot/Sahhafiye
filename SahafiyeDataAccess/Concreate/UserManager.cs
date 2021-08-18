@@ -7,7 +7,7 @@ using System.Text;
 
 namespace SahafiyeDataAccess.Concreate
 {
-    public class UserManager: BaseDapperRepository<Users>,IUserManager
+    public class UserManager: BaseDapperRepository<users>,IUserManager
     {
     }
 }

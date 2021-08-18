@@ -69,7 +69,7 @@ namespace SahafiyeCore.DataAccess.Query.MySQL.MySQLQuery
         public string DateCastFunc(string data)
         {
 
-            return "str_to_date('" + data + "', '%d.%m.%Y %H:%i:%s'),";
+            return "str_to_date('" + data + "', '%Y-%m-%d %H:%i:%s'),";
         }
     }
    
